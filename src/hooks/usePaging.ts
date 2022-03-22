@@ -2,7 +2,7 @@
 
 // import { hideLoading, showLoading } from '@/utils/Toast';
 // import axios from 'axios';
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useLayoutEffect, useState } from 'react'
 
 // const [result, no_more] = usePaging( {}, HomeService.getHomeApi, '', (res) => {
 //     // 请求成功回调
@@ -12,7 +12,6 @@ import { useCallback, useEffect, useState } from 'react'
 function usePaging<T, LISTITEM>(
     params: any,
     http: (params: any) => Promise<T | undefined>,
-    is_bottom: any, // scrollview触底 i++
     callback = Function.prototype, // 请求成功回调
     isPag = true, // 是否开启分页
     isWindow = true, // 是否开启窗口触底 默认窗口触底
@@ -22,6 +21,7 @@ function usePaging<T, LISTITEM>(
         LISTITEM[],
         boolean,
         boolean,
+        () => void,
         () => void,
     ] {
     const [page, setPage] = useState(1);
@@ -35,19 +35,11 @@ function usePaging<T, LISTITEM>(
         setList([]);
         paging(1, true);
     }
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (params) {
             initFn();
         }
     }, [params])
-
-    useEffect(() => {
-        if (is_bottom) {
-            if (no_more && !isWindow) return
-            console.log('scrollview到底---' + no_more, isWindow);
-            paging();
-        }
-    }, [is_bottom]);
 
     const paging = useCallback(async (_page?, is_init?) => {
         if (!http || !params) return
@@ -76,8 +68,18 @@ function usePaging<T, LISTITEM>(
         setLoading(false);
     }, [params, page, no_more, loading, list,]);
 
+    const nextPage = () => {
+        if (no_more && !isWindow) return
+        console.log('next_page' + no_more, isWindow);
+        paging();
+    }
     return [
-        result, list, no_more, loading, initFn
+        result,
+        list,
+        no_more,
+        loading,
+        nextPage,
+        initFn
     ];
 }
 
