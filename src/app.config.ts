@@ -9,6 +9,21 @@ export default defineAppConfig({
       "demo/index"
     ]
   }],
+  // tabBar: {
+  //   custom: true,
+  //   color: '#C2C2C2',
+  //   selectedColor: '#FF8106',
+  //   list: [
+  //     {
+  //       pagePath: 'pages/test/index',
+  //       text: '测试',
+  //     },
+  //     {
+  //       pagePath: 'pages/index/index',
+  //       text: '首页',
+  //     },
+  //   ],
+  // },
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
