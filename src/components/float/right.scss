@@ -1,0 +1,13 @@
+.float_bottom {
+    position: fixed;
+    // -webkit-overflow-scrolling: touch;
+    top: 0;
+    left: auto;
+    right: -100vw;
+    transition: 350ms;
+    z-index: 10;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}

@@ -1,0 +1,30 @@
+.test_box {
+    width: 100%;
+    // padding: 16px 24px;
+    box-sizing: border-box;
+    animation: ans 800ms;
+
+    .title {
+        font-size: 36px;
+    }
+
+    .radio_box {
+        margin-top: 60px;
+    }
+
+    .test_item {
+        margin-bottom: 40px;
+        min-height: 80px;
+        position: relative;
+    }
+
+    @keyframes ans {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
