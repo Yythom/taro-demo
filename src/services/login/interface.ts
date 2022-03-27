@@ -11,6 +11,7 @@ interface shop_account_list_interface {
     list: {
         shop_name: string;
         url: string;
+        checked?: boolean;
     }[],
 }
 

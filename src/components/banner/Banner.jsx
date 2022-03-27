@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-indent-props */
-import { useEffect, useLayoutEffect, useState } from 'react';
-import { View, Text, Swiper, SwiperItem } from '@tarojs/components';
-import Taro, { getStorageSync, stopPullDownRefresh, usePullDownRefresh } from '@tarojs/taro'
+import { useLayoutEffect, useState } from 'react';
+import { View, Swiper, SwiperItem } from '@tarojs/components';
 import './banner.scss'
 import BlurImg from '@/components/blur-img/BlurImg';
 
@@ -66,7 +65,8 @@ const Banner = ({
                             return (
                                 <View className={(i == index && 'act_dots') + ' dots'} key={className + 'e'} style={{
 
-                                }} />
+                                }}
+                                />
 
                             )
                         })

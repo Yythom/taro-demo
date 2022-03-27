@@ -11,7 +11,7 @@ export function netUpload(stack, error_item) {
 
 // 将请求错误加入栈
 export function newWorkStackPush(req_status, level, code, requestParams, res,) {
-    if (flag) {
+    if (flag && Breadcrumb) {
         Breadcrumb.push({
             type: 'request',
             category: 'debug',
@@ -36,7 +36,7 @@ export async function initErrorNet(pushFn) { // 后台配置上报监控开关
     //         'Content-Type': 'application/json', // 默认值
     //     },
     // });
-    return await new Promise((resolve, reject) => {
+    return await new Promise((resolve,) => {
         setTimeout(() => {
             flag = true
             resolve(true)

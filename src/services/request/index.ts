@@ -1,6 +1,8 @@
 import Taro from '@tarojs/taro';
 import getBaseUrl from './baseURL';
+import interceptors from './interceptors';
 
+interceptors.forEach((item) => Taro.addInterceptor(item));
 class HttpRequest {
   baseOptions(params, method = 'POST') {
     const { url, data, contentType = 'application/json' } = params;
@@ -19,14 +21,12 @@ class HttpRequest {
   }
   async get<T>(url, data = '') {
     const ret: Taro.request.SuccessCallbackResult<T> = await this.baseOptions({ url, data }, 'GET');
-    const _data: T = ret.data;
-    return _data
+    return ret
   }
 
   async post<T>(url, data = {}, contentType?) {
     const ret: Taro.request.SuccessCallbackResult<T> = await this.baseOptions({ url, data, contentType })
-    const _data: T = ret.data;
-    return _data
+    return ret
   }
 }
 
