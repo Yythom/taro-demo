@@ -1,9 +1,12 @@
 /* eslint-disable no-underscore-dangle */
 export default class Chain {
-  constructor(requestParams, interceptors = [], index = 0) {
-    this.index = index;
+  index: number;
+  requestParams: any;
+  interceptors: any[];
+  constructor(requestParams?, interceptors?, index?) {
+    this.index = index || 0;
     this.requestParams = requestParams;
-    this.interceptors = interceptors;
+    this.interceptors = interceptors || [];
   }
 
   proceed(requestParams) {

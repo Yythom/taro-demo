@@ -1,8 +1,8 @@
 export function timeoutInterceptor(chain) {
   const { requestParams } = chain;
   let p;
-  const res = new Promise((resolve, reject) => {
-    let timeout = setTimeout(() => {
+  const res: any = new Promise((resolve, reject) => {
+    let timeout: any = setTimeout(() => {
       timeout = null;
       reject(new Error('网络请求超时，请稍后再试！'));
     }, (requestParams && requestParams.timeout) || 30000);

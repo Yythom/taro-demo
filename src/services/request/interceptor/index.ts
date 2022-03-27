@@ -1,6 +1,8 @@
 import Chain from './chain';
 
 export default class Link {
+  privateInterceptor: any;
+  chain: Chain;
   constructor(interceptor) {
     this.privateInterceptor = interceptor;
     this.chain = new Chain();
