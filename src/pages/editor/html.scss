@@ -1,0 +1,16 @@
+view {
+    list-style: none !important;
+}
+
+/* a 标签默认效果 */
+._a {
+    padding: 1.5px 0 1.5px 0;
+    color: #366092;
+    word-break: break-all;
+}
+
+/* a 标签点击态效果 */
+._hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}

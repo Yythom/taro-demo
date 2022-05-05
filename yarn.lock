@@ -1230,6 +1230,14 @@
     "@babel/runtime" "^7.14.5"
     "@tarojs/runtime" "3.4.3"
 
+"@tarojs/api@3.4.8":
+  "integrity" "sha512-4UGrgDKZwsM6U+UNngmKXta+EbYiTWX9hLUqDyI1kNftNtb7NDSIcnNX4IA+e1JD1FdSGz5fx2t1ZgvDSPJi2g=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/api/-/api-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.4.8"
+
 "@tarojs/components@3.4.3":
   "integrity" "sha512-isWSw9wqqYjbUyh7r3CE8hF2zqjpLi5b6yTwtrvHMEpwOzUjozkGJh7/ynrtzcYz4nki2Tffkg5snnqSgr5uNQ=="
   "resolved" "https://registry.npmmirror.com/@tarojs/components/-/components-3.4.3.tgz"
@@ -1419,6 +1427,17 @@
     "universal-router" "^8.3.0"
     "url-parse" "^1.4.7"
 
+"@tarojs/router@3.4.8":
+  "integrity" "sha512-BHNr4s3z+t+BHrL1YqizZ05KVbmT6vLQ9lzVmVbJIv/5eCbbanJ4hwkM3tgmY+0x4V4nxTaZPtLWKAganxeyKw=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/router/-/router-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@tarojs/runtime" "3.4.8"
+    "@tarojs/taro" "3.4.8"
+    "history" "^5.1.0"
+    "query-string" "^7.1.1"
+    "universal-router" "^8.3.0"
+
 "@tarojs/runner-utils@3.4.3":
   "integrity" "sha512-UuyEhHxLdlXD1fn2y4iKG3J6W01t+mO7TF1YHWBmDbzC1ERZgaaPE/VLXQBIk7cS+izHJj9lPX+9Kjw2SBMaDg=="
   "resolved" "https://registry.npmmirror.com/@tarojs/runner-utils/-/runner-utils-3.4.3.tgz"
@@ -1433,6 +1452,16 @@
   "version" "3.4.3"
   dependencies:
     "@tarojs/shared" "3.4.3"
+    "inversify" "5.1.1"
+    "lodash-es" "4.17.15"
+    "reflect-metadata" "^0.1.13"
+
+"@tarojs/runtime@3.4.8":
+  "integrity" "sha512-1ZzDM90zW4Fqqb4w+1MKwdlufiZqrUUTJk5IqnUsBBHlhSm460TCa8JxUbzloMAi9S2yEb/bdsmBDFvPH4q7rQ=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/runtime/-/runtime-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@tarojs/shared" "3.4.8"
     "inversify" "5.1.1"
     "lodash-es" "4.17.15"
     "reflect-metadata" "^0.1.13"
@@ -1457,6 +1486,11 @@
   "resolved" "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.4.3.tgz"
   "version" "3.4.3"
 
+"@tarojs/shared@3.4.8":
+  "integrity" "sha512-To9I4N5xwTGqmmnGXXLmeE+tdxaTopmsaPagZSaVanvUAD5jAgBdtrBjA4hH+HHSx69aZQWaECUXtcM4zYISTw=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.4.8.tgz"
+  "version" "3.4.8"
+
 "@tarojs/taro-h5@3.4.3":
   "integrity" "sha512-LdBQsp/Cfe9oPRnZYVEWzJYxeWrR+vEFXXI5stzIvUk0YAJ616c+OLaZgYnW7FVIIBy7pTqVSVhlJuF9+2pb0Q=="
   "resolved" "https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.4.3.tgz"
@@ -1469,6 +1503,21 @@
     "base64-js" "^1.3.0"
     "jsonp-retry" "^1.0.3"
     "mobile-detect" "^1.4.2"
+    "whatwg-fetch" "^3.4.0"
+
+"@tarojs/taro-h5@3.4.8":
+  "integrity" "sha512-237FsCsNZefEvJeUFNC7i7kVkAi+S0UFSsoPrAlptYrZIGJWwAYZq+sjjHUzr9MUCCAVrr53XkjS2rsNxYAs1w=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@tarojs/api" "3.4.8"
+    "@tarojs/router" "3.4.8"
+    "@tarojs/runtime" "3.4.8"
+    "@tarojs/taro" "3.4.8"
+    "base64-js" "^1.3.0"
+    "jsonp-retry" "^1.0.3"
+    "mobile-detect" "^1.4.2"
+    "query-string" "^7.1.1"
     "whatwg-fetch" "^3.4.0"
 
 "@tarojs/taro-loader@3.4.3":
@@ -1488,6 +1537,15 @@
     "@tarojs/api" "3.4.3"
     "@tarojs/runtime" "3.4.3"
     "@tarojs/taro-h5" "3.4.3"
+
+"@tarojs/taro@3.4.8":
+  "integrity" "sha512-mAqf5elv2LiBsZDEbvyemgFFLTfE+dALbDA/101XPzsfXJuLjLJ19WKs5xTKeG15Rn6HbsTvs0FK9uhMtILAfQ=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/taro/-/taro-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@tarojs/api" "3.4.8"
+    "@tarojs/runtime" "3.4.8"
+    "@tarojs/taro-h5" "3.4.8"
 
 "@tarojs/webpack-runner@3.4.3":
   "integrity" "sha512-e95sYsM7RXejMmOWpB8ni038x+giFNm4odNRuYjeh5I66soxGjsdwrZXVecwC3AbjVH7+EMcLkiuHeJBqSyILw=="
@@ -1530,6 +1588,16 @@
     "webpack-chain" "4.9.0"
     "webpack-dev-server" "3.11.0"
     "webpack-format-messages" "^2.0.5"
+
+"@tarojs/with-weapp@^3.4.8":
+  "integrity" "sha512-T7TcIUkJ4Lmk0MuybRKVHgSnVrm9yj6stpTQfMpR817esxh9JuM4YSFrYRBk80SD0xZAh4mJsbkr5ChyLZvwcg=="
+  "resolved" "https://registry.npmmirror.com/@tarojs/with-weapp/-/with-weapp-3.4.8.tgz"
+  "version" "3.4.8"
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.4.8"
+    "@tarojs/taro" "3.4.8"
+    "lodash" "^4.17.21"
 
 "@types/archy@^0.0.31":
   "integrity" "sha512-v+dxizsFVyXgD3EpFuqT9YjdEjbJmPxNf1QIX9ohZOhxh1ZF2yhqv3vYaeum9lg3VghhxS5S0a6yldN9J9lPEQ=="
@@ -7729,6 +7797,16 @@
   "integrity" "sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw=="
   "resolved" "https://registry.npmmirror.com/query-string/-/query-string-6.14.1.tgz"
   "version" "6.14.1"
+  dependencies:
+    "decode-uri-component" "^0.2.0"
+    "filter-obj" "^1.1.0"
+    "split-on-first" "^1.0.0"
+    "strict-uri-encode" "^2.0.0"
+
+"query-string@^7.1.1":
+  "integrity" "sha512-MplouLRDHBZSG9z7fpuAAcI7aAYjDLhtsiVZsevsfaHWDS2IDdORKbSd1kWUA+V4zyva/HZoSfpwnYMMQDhb0w=="
+  "resolved" "https://registry.npmmirror.com/query-string/-/query-string-7.1.1.tgz"
+  "version" "7.1.1"
   dependencies:
     "decode-uri-component" "^0.2.0"
     "filter-obj" "^1.1.0"

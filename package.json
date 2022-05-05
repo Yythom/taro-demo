@@ -44,6 +44,7 @@
     "@tarojs/react": "3.4.3",
     "@tarojs/runtime": "3.4.3",
     "@tarojs/taro": "3.4.3",
+    "@tarojs/with-weapp": "^3.4.8",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.0",
     "number-precision": "^1.5.2",

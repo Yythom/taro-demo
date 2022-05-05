@@ -1,7 +1,8 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
-    'pages/test/index'
+    'pages/test/index',
+    'pages/editor/index'
   ],
   subpackages: [{
     root: "subpages/",
