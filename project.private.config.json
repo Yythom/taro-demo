@@ -25,6 +25,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "scene=a%3A43%2Cluck_id%3A43%2Cperiod_id%3A43",
+          "launchMode": "default",
+          "scene": 1047
         }
       ]
     }
